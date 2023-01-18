@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(185, 75%, 39%);
+    position: relative;
+    overflow: hidden;
+}
+.topCircle{
+    position: absolute;
+    top: -80%;
+    left: -20%;
+}
+.bottomCircle{
+    position: absolute;
+    bottom: -97%;
+    right: -15%;
+}
+.profileCard{
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 18rem;
+    height: 20rem;
+    padding-bottom: 1rem;
+    border-radius: 15px;
+}
+.top{
+    width: 100%;
+    height: 40%;
+    background: url(/images/bg-pattern-card.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 60%;
+}
+.image{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 4px solid white;
+    background: white;
+    margin-top: -3rem;
+}
+.image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.heading h1{
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+.heading p{
+    font-size: 1rem;
+    color:hsl(227, 10%, 46%);
+}
+.bottom p{
+    font-size: 0.8rem;
+    color:hsl(227, 10%, 46%);
+
+}
+.bottom hr{
+    color:hsl(0, 0%, 59%);
+    width: 100%;
+    opacity: 0.5;
+}
+.socialProofs{
+    display: flex;
+    gap: 3rem;
+    text-align: center;
+}
+.socialProofs h2{
+    font-size: 1rem;
+    color: hsl(229, 23%, 23%);
+}
+.socialProofs p{
+    font-size: 0.5rem;
+    letter-spacing: 0.1rem;
+    color:hsl(227, 10%, 46%);
+}
+
+/* media query */
+@media screen and (max-width:376px) {
+    .topCircle{
+        position: absolute;
+        top: -80%;
+        left: -200%;
+    }
+    .bottomCircle{
+        position: absolute;
+        bottom: -97%;
+        right: -200%;
+    }
+}
